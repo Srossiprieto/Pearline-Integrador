@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --bg: rgba(0, 0, 0, 0.998);
+    --bg-white: rgba(255, 255, 255, 0.995);
+    --title-grey: #232836;
+    --border: #ffffff80;
+    --a: #2997ff;
+    --line: #686868 ;
+    --blue: #0071e3;
+    --dark-blue: #0066cc;
+    --facebook: #4267b2;
+    --facebook-hv: #5571a9;
+    --white: #ffffff;
+    --white-3: #c7c7c7;
+    --nav-bg: rgba(0, 0, 0, 0.8);
+    --greyLight: #d6d6d6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+/* navbar - toggle */
+header {
+    background: var(--nav-bg);
+    width: 100%; 
+    height: 45px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 30px 2px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 9999; 
+}
+/* TOGGLE MENU  */
+
+#toggle-menu {
+    display: none;
+}
+.bars-menu{
+    display: none;
+}
+
+
+.logo {
+    height: 18px;
+    cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+
+}
+.navbar {
+  gap: 10px
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+    color: var(--greyLight);
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-list a:hover {
+    color: var(--blue);
+}
+
+.btn-nav1 {
+    color: var(--greyLight);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 4px 4px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    text-align: center;
+}
+.btn-nav1:hover {
+    color: var(--blue);
+    background-color: var(--greyLight);
+}
+.btn-nav2 {
+    color: var(--greyLight);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 4px 4px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    text-align: center;
+}
+.btn-nav2:hover {
+    color: var(--blue);
+    background-color: var(--greyLight);
+}
+
+
+/* login */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.806); */
+    background: url(/Img/Fondo-nube.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.form-box {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    font-size: 28px;
+    color: var(--white);
+    text-align: center;
+
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid var(--white);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--white);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+
+
+
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: var(--white);
+
+}
+
+
+.inputbox i {
+    position: absolute;
+    right: 8px;
+    color: var(--white);
+    font-size: 18px;
+    top: 20px;
+}
+
+
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: 14px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a {
+    margin-left: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+.forget label a:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+.btn-1 a {
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 40px;
+    background: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--line);
+}
+.btn-1 a:hover {
+    color: var(--a);
+    background: var(--white-3);
+}
+.btn {
+    text-decoration: none;
+    color: var(--a);
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn:hover{
+    color: var(--white);
+}
+.register {
+    font-size: 14px;
+    color: var(--white);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    color: var(--a);
+}

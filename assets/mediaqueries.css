@@ -1,0 +1,266 @@
+
+
+@media(max-width:991px) {
+
+
+
+    /* Bussines */
+    #info2 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+    #info3 {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    /* Cards */
+    /* width */
+    #cards {
+        width: 100%;
+    }
+    /* direction and height */
+    .cards__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__content > div {
+        height: 400px;
+    }
+    /* h1 */
+    .card__content1 h1 {
+        font-size: 20px;
+    }
+    .card__content2 h1 {
+        font-size: 20px;
+    }
+    .card__content3 h1 {
+        font-size: 20px;
+    }
+    .card__content4 h1 {
+        font-size: 20px;
+    }
+    .card__content5 h1 {
+        font-size: 20px;
+    }
+    .card__content6 h1 {
+        font-size: 20px;
+    }
+    /* img h1 */
+    .card__content3 img {
+    height: 18px;
+    width: 18px;
+    }
+    .card__content4 img {
+    height: 18px;
+    width: 18px;
+    }
+    /* h3 */
+    .card__content1 h3 {
+    font-size: 14px;
+    }
+    .card__content2 h3 {
+    font-size: 14px;
+    }
+    .card__content3 h3 {
+    font-size: 14px;
+    }
+    .card__content4 h3 {
+    font-size: 14px;
+    }
+    .card__content5 h3 {
+    font-size: 14px;
+    }
+    .card__content6 h3 {
+    font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    /* Footer */
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:768px){
+    /* toggle-menu */
+    .navbar ul{
+        background: var(--nav-bg);
+        width: 100%;
+        height: calc(100vh - 45px);
+        position: absolute;
+        top: 45px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease;
+
+    }
+    .bars-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+    }
+    
+    .bars-menu span {
+        height: 1.5px;
+        width: 18px;
+        background: var(--white);
+        transition: transform 0.3s;
+    }
+    #toggle-menu:checked ~ .bars-menu span:nth-child(1) {
+        position: absolute;
+        top: 0;
+        transform: rotate(135deg);
+    }
+    #toggle-menu:checked ~ .bars-menu span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #toggle-menu:checked ~ .bars-menu span:nth-child(3) {
+        position: absolute;
+        top: 0;
+        transform: rotate(-135deg);
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        transform: translateX(0);
+    }
+    
+    
+    /* Discount */
+    .discount-2 span{
+        display: none;
+    }
+    .top__title h1 {
+        font-size: 30px;
+    }
+    .top__title h3 {
+        font-size: 22px;
+    }
+    .angle-1 {
+        font-size: 14px;
+
+    }
+    .top__title--links a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:576px){
+    
+    /* Discount */
+    .discount-2 span{
+        display: none;
+    }
+
+    
+
+    /* Pear 14 */
+    .info__title h1{
+        font-size: 45px;
+    }
+    .info__title h3 {
+        font-size: 18px;
+    }
+    .info__img img{
+        height: 400px;
+        width: 400px;
+    }
+    .angle-2 {
+        font-size: 11px;
+    }
+    .info__title--links a {
+        font-size: 15px;
+    }
+    /* bussines */
+
+    .info2__title h1 {
+    font-size: 30px;
+    }
+    .info2__title h3 {
+    max-width: 450px;
+    }
+
+
+
+
+    .info2__img img {
+        height: 300px;
+        width: 350px;
+    }
+    .info2__img {
+    padding-top: 10px;
+    }
+    /* bussines 2 */
+    .info3__title h1 {
+        font-size: 30px;
+    }
+    .info3__title h3 {
+        max-width: 450px;
+    }
+        
+    
+    
+    
+    .info3__img img {
+        height: 350px;
+        width: 300px;
+    }
+    .info3__img {
+        padding-top: 10px;
+    }
+
+
+
+}
+
+
+
+@media(max-width:365px) {
+    /* login // register */
+    
+    h2 {
+        font-size: 16px;
+    }
+    .form-box {
+        width: 240px;
+        height:450px;
+    }
+    .inputbox {
+       margin-left: 10px;
+       width: 210px;
+       font-size: 12px
+    }
+    label a{
+        display: flex;
+        flex-direction: column;
+    }
+    label,
+    input {
+        font-size: 12px;
+    }
+
+    .btn-1 a {
+        width: 200px;
+        margin: 20px;
+        font-size: 14px;
+    }
+    .register p{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
+
