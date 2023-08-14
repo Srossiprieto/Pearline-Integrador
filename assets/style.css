@@ -31,7 +31,10 @@
     list-style: none;
     text-decoration: none;
 }
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -53,6 +56,9 @@ header {
     top: 0;
     z-index: 9999; 
 }
+
+
+
 /* TOGGLE MENU  */
 
 #toggle-menu {
@@ -62,7 +68,7 @@ header {
     display: none;
 }
 
-
+/* Navbar */
 .logo {
     height: 18px;
     cursor: pointer;
@@ -119,6 +125,10 @@ header {
     color: var(--blue);
     background-color: var(--greyLight);
 }
+
+
+/* Discount - Buy Online */
+
 .discount {
     font-weight: 400;
     height: 45px;
@@ -166,11 +176,9 @@ header {
 
 
 
-/* 1er section */
+/* hero- (1er section) */
 
 #hero {
-    max-width: 2000px;
-    margin: 0 auto;
     height: 610px;
     width: 100%;
     position: relative;
@@ -221,129 +229,13 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .hero__img img {
     height: 390px;
     width: 390px;
 }
-
-
-
-
-
-/* TARGETS */
-#targets {
-    max-width: 2000px;
-    margin: 0 auto;
-    display: flex;
-    padding-bottom: 70px;
-    padding-top: 79px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 80px;
-    background: black;
-
-}
-
-.content__target {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.target {
-    width: 300px;
-    height: 290px;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--dark-blue);
-    border-radius: 10px;
-    gap: 20px;
-    /* background-color: var(--bgn-targets); */
-}
-.target i{
-    font-size: 16px;
-    color: var(--white);
-    padding: 10px 10px;
-    background: var(--dark-blue);
-    border-radius: 50%;
-}
-.target h3{
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--white);
-}
-.target p {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--text-trgt);
-}
-
-
-
-
-/* PEAR 14 */
-
-
-#info{
-    max-width: 2000px;
-    margin: 0 auto;
-    height: 700px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background: var(--white);
-}
-.info__title{
-    margin-top: 52px;
-    color: black;
-    text-align: center;
-    z-index: 3;
-}
-.info__title h1 {
-    font-size: 62px;
-    font-weight: 500;
-    letter-spacing: -1px;
-}
-.info__title h3 {
-    margin-top: 3px;
-    font-size: 21px;
-    font-weight: 400;
-}
-.angle-2 {
-    color: var(--dark-blue);
-    font-size: 14px;
-}
-.info__title--links {
-    margin-top: 12px;
-    text-align: center;
-}
-.info__title--links a {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--dark-blue);
-}
-.info__title--links:hover {
-    text-decoration: underline;
-    color: var(--dark-blue);
-}
-
-.info__img {
-    position: relative;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* PEARLINE BUSSINES*/
+/* PEARLINE BUSSINES (2da section)*/
 #info2 {
-    max-width: 2000px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -401,10 +293,8 @@ header {
     color: var(--dark-blue);
     background: var(--greyLight);
 }
-/* PEARLINE BUSSINES*/
+/* PEARLINE BUSSINES (3er section)*/
 #info3 {
-    max-width: 2000px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -464,10 +354,116 @@ header {
 }
 
 
-/* Products cards */
+/* TARGETS (4ta section) */
+#targets {
+    display: flex;
+    padding-bottom: 70px;
+    padding-top: 79px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    background: black;
+
+}
+
+.content__target {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.target {
+    width: 300px;
+    height: 290px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--dark-blue);
+    border-radius: 10px;
+    gap: 20px;
+    /* background-color: var(--bgn-targets); */
+}
+.target i{
+    font-size: 16px;
+    color: var(--white);
+    padding: 10px 10px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+}
+.target h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--white);
+}
+.target p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-trgt);
+}
+
+
+
+
+/* PEAR 14 (5ta section) */
+
+
+#info{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+}
+.info__title{
+    margin-top: 52px;
+    color: black;
+    text-align: center;
+    z-index: 3;
+}
+.info__title h1 {
+    font-size: 62px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.info__title h3 {
+    margin-top: 3px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.angle-2 {
+    color: var(--dark-blue);
+    font-size: 14px;
+}
+.info__title--links {
+    margin-top: 12px;
+    text-align: center;
+}
+.info__title--links a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+.info__title--links:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+.info__img {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Products cards (6ta section)*/
 #cards {
-    max-width: 2000px;
-    margin: 0 auto;
     padding-top: 14px;
     padding-bottom: 14px;
     justify-content: center;
@@ -721,7 +717,7 @@ header {
 
 
 
-/* Contact */
+/* Contact (7ma section)*/
 #contact {
     width: 100%;
     height: 500px;
@@ -831,7 +827,7 @@ textarea::-webkit-scrollbar-thumb {
 
 
 
-/* Footer */
+/* Footer (8tva section)*/
 
 .footer__container {
     padding-top: 14px;
@@ -839,8 +835,6 @@ textarea::-webkit-scrollbar-thumb {
     align-items: center;
 }
 .footer {
-    max-width: 2000px;
-    margin: 0 auto;
     margin-top: 10px;
     background-color: var(--greyLight);
     padding: 20px 0;
