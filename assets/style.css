@@ -197,6 +197,9 @@ header {
     font-weight: 500;
     letter-spacing: -1px;
 }
+.top__title span {
+    color: var(--dark-blue);
+}
 .top__title h3 {
     margin-top: 3px;
     font-size: 26px;
